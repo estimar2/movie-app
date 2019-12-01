@@ -8,3 +8,5 @@ anywhen, anywhere... You want watching the movie when this app recommended thing
 - [ ] nowPlaying Movie
 
 ## ISSUE
+
+## USE API
