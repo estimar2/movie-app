@@ -19,6 +19,8 @@ anywhen, anywhere... You want watching the movie when this app recommended thing
 
 - axios 설치 후, 에러가 발생한 경우 => npm install 을 실행 후 서버 재시작
 
+- 401 error : axios version 0.19.. 일 경우 || API_KEY가 잘못되었을 경우
+
 ## USE API
 
 - moviedb.org
