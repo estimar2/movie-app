@@ -37,7 +37,7 @@ class App extends React.Component {
   };
 
   //loading이 false면 -> 아무것도 하지마
-  //loading이 true로 바뀌면
+  //.map를 사용하려면 .map다음 최상단 컴포넌트에게 key값이 있어야함
   render() {
     const { viewPopular, loading } = this.state;
     return (
@@ -47,7 +47,7 @@ class App extends React.Component {
           <CommonBtn>NowPlaying Movie</CommonBtn>
         </View>
         {loading ? (
-          viewPopular.map(movie => <Text>{movie.title}</Text>)
+          viewPopular.map(movie => <Text key={movie.id}>{movie.title}</Text>)
         ) : (
           <Text>Loading ...</Text>
         )}

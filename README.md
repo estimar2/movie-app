@@ -21,6 +21,8 @@ anywhen, anywhere... You want watching the movie when this app recommended thing
 
 - 401 error : axios version 0.19.. 일 경우 || API_KEY가 잘못되었을 경우
 
+- map 사용시 unique key 관련 경고가 발생되면 => 최상단 컴포넌트에게 key값을 부여한다.
+
 ## USE API
 
 - moviedb.org
@@ -33,4 +35,12 @@ anywhen, anywhere... You want watching the movie when this app recommended thing
     1. CommonBtn 을 현재 디바이스 width의 1/3크기로 만든다.
 
     2. CommonBtn 을 본인의 스타일에 맞춰 이쁘게 만든다.
+</pre>
+
+[12-02]
+
+<pre>
+    새로운 expo 프로젝트를 생성해서 movie -> upcoming의 title을 화면에 보여주세요
+    git repository URL을 제출해주시면 됩니다.
+    12월 04일까지 제출
 </pre>
