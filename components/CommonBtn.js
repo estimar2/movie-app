@@ -2,7 +2,13 @@
 import React from "react";
 
 // 2. 필요한 컴포넌트를 리엑트네이티브에서 가져온다.
-import { TouchableOpacity, Text, StyleSheet, Dimensions } from "react-native";
+import {
+  TouchableOpacity,
+  Text,
+  View,
+  StyleSheet,
+  Dimensions
+} from "react-native";
 
 const { width } = Dimensions.get("window");
 
@@ -15,14 +21,21 @@ class CommonBtn extends React.Component {
 
   render() {
     return (
-      <TouchableOpacity style={styles.btn}>
-        <Text style={styles.txt}>{this.props.children}</Text>
-      </TouchableOpacity>
+      <View style={styles.container}>
+        <TouchableOpacity style={styles.btn}>
+          <Text style={styles.txt}>{this.props.children}</Text>
+        </TouchableOpacity>
+      </View>
     );
   }
 }
 
 const styles = StyleSheet.create({
+  container: {
+    borderBottomWidth: 1,
+    borderBottomColor: "#eee",
+    paddingBottom: 10
+  },
   btn: {
     margin: 10,
     justifyContent: "center",
@@ -30,7 +43,8 @@ const styles = StyleSheet.create({
     backgroundColor: "#0a3d62",
     width: width / 3,
     height: 30,
-    borderRadius: 10
+    borderRadius: 10,
+    shadowColor: "#000"
   },
   txt: { color: "#fff" }
 });
