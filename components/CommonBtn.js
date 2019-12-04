@@ -22,7 +22,7 @@ class CommonBtn extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <TouchableOpacity style={styles.btn}>
+        <TouchableOpacity onPress={this.props.action} style={styles.btn}>
           <Text style={styles.txt}>{this.props.children}</Text>
         </TouchableOpacity>
       </View>
@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     backgroundColor: "#0a3d62",
     width: width / 3,
-    height: 30,
+    height: 35,
     borderRadius: 10,
     shadowColor: "#000"
   },
