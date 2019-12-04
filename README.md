@@ -4,8 +4,8 @@ anywhen, anywhere... You want watching the movie when this app recommended thing
 
 ## To Do
 
-- [ ] popular Movie
-- [ ] nowPlaying Movie
+- [x] popular Movie
+- [x] nowPlaying Movie
 
 ## PROCESS
 
